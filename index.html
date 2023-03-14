@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Eric Gill-Tercera pre entrega.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Eric Gill - Tercer pre Entrega </title>
 </head>
 <body>
+    <h1>BIENVENIDOS A TIENDA-DIGITAL!!</h1>
+    <br>
+    <br>
+    <h2>Productos:</h2>
+    <div class="productos">
+        <ul>
+            <li>Agua 500ml ($400) <br><button class="botonProductos" onclick="agregarProducto('Agua 500ml', '$400')">Agregar al Carrito</button></li><br><br>
+            <li>Gaseosa 550ml ($500) <br><button class="botonProductos" onclick="">Agregar al Carrito</button></li><br><br>
+            <li>Agua Saborizada ($450) <br><button class="botonProductos" onclick="">Agregar al Carrito</button></li><br><br>
+        </ul>
+    </div>
+    <div class="carritoDiv">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <div id="total-carrito">
+            Total $<span id="costoTotal"></span>
+        </div>
+        <br>
+        <div class="botonesCarrito">
+            <button onclick="finalizarCompra()">Comprar ahora</button>
+            <button onclick="reloadPage()">Vaciar carrito</button> 
+            <button onclick="diaNoche()">dia noche<!-- rellenar despues --></button>
+        </div>
+    </div>
+
+
+    <div>
+        <ul>
+            <li>1 <button onclick="uno()">1</button></li>
+            <li>2 <button onclick="dos()">2</button></li>
+        </ul>
+    </div>
+
+
+
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </body>
 </html>
