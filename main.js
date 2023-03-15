@@ -1,3 +1,30 @@
+let carrito = [];
+let total = 0;
+
+// agregar items al "carrito"
+function agregarProducto(nombre, precio){
+    const producto ={
+        nombre: nombre,
+        precio: precio,
+    }
+};
+//agregar al carro
+carrito.push(producto);
+
+const listaCarrito = document.getElementById("listaCarrito");
+const elemento = document.createElement("li");
+elemento.innerText = 
+
+
+
+
+
+
+
+
+
+
+
 // alert con 3 botones
 function uno() {
     

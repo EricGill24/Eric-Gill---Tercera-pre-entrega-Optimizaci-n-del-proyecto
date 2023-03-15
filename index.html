@@ -13,16 +13,17 @@
     <br>
     <h2>Productos:</h2>
     <div class="productos">
+        
         <ul>
             <li>Agua 500ml ($400) <br><button class="botonProductos" onclick="agregarProducto('Agua 500ml', '$400')">Agregar al Carrito</button></li><br><br>
-            <li>Gaseosa 550ml ($500) <br><button class="botonProductos" onclick="">Agregar al Carrito</button></li><br><br>
-            <li>Agua Saborizada ($450) <br><button class="botonProductos" onclick="">Agregar al Carrito</button></li><br><br>
+            <li>Gaseosa 550ml ($500) <br><button class="botonProductos" onclick="agregarProducto('Gaseosa 550ml', '$500')">Agregar al Carrito</button></li><br><br>
+            <li>Agua Saborizada 500ml ($450) <br><button class="botonProductos" onclick="agregarProducto('Agua Saborizada 500ml', '$450')">Agregar al Carrito</button></li><br><br>
         </ul>
     </div>
     <div class="carritoDiv">
         <h2>Carrito de Compras</h2>
-        <ul id="lista-carrito"></ul>
-        <div id="total-carrito">
+        <ul id="listaCarrito"></ul>
+        <div id="totalCarrito">
             Total $<span id="costoTotal"></span>
         </div>
         <br>

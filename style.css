@@ -5,18 +5,48 @@
 
 body{
     font-size: x-large;
+    background-color: rgba(149, 255, 244, 0.281);
+}
+h1{
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(0, 255, 255, 0.13);
+    width: fit-content;
+    border:  rgba(0, 0, 0, 0.226);
+    border-style:outset;
 }
 h2{
     margin:25px 25px 25px 5px;
+    background-color: aquamarine;
+    width: 500px;
+    border:  rgba(0, 0, 0, 0.226);
+    border-style:outset;
 }
 .productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 25%;
     margin:0px 25px 25px 5px;
+    background-color: aquamarine;
+    border:  rgba(0, 0, 0, 0.226);
+    border-style:outset;
 }
+
 .botonProductos{
     margin-left: 7%;
 }
 .carritoDiv ul, h2, div{
     margin: 5px 5px 10px 5px;
+    width: 500px;
+}
+#totalCarrito{
+    margin: 20px 0 0 10px;
+    background-color: rgba(153, 255, 221, 0.527);
+    width: 495px;
+    height: auto;
+    border:  rgba(0, 0, 0, 0.226);
+    border-style:outset;
 }
 .botonesCarrito{
     display: flex;
@@ -28,9 +58,9 @@ button{
 
     background-color:#333;
     color: white;
-    border:  black;
-    border-style:outset;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    border:  black;
+    border-style:outset;
 }
