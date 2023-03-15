@@ -36,7 +36,7 @@ h2{
 .botonProductos{
     margin-left: 7%;
 }
-.carritoDiv ul, h2, div{
+.carritoDiv ul, h2, .botonesCarrito{
     margin: 5px 5px 10px 5px;
     width: 500px;
 }

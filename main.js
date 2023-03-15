@@ -5,15 +5,41 @@ let total = 0;
 function agregarProducto(nombre, precio){
     const producto ={
         nombre: nombre,
-        precio: precio,
-    }
-};
-//agregar al carro
+        precio: precio
+    };
+
+//agregar al carro, luego actualizar
 carrito.push(producto);
 
-const listaCarrito = document.getElementById("listaCarrito");
+const listaCarrito = document.getElementById("lista-carrito");
 const elemento = document.createElement("li");
-elemento.innerText = 
+elemento.innerText = `${nombre} - ${precio}`;
+listaCarrito.appendChild(elemento);
+
+//actualizacion
+total += precio;
+const totalCarrito = document.getElementById("total-carrito");
+totalCarrito.innerText = total.toFixed(2);
+}
+function finalizarCompra(){
+    let total = document.getElementById("total-carrito").innerText; // valor del elemento con el ID 
+    let fecha = new Date().toLocaleDateString();// Tenes la fecha del dia de compra
+    localStorage.setItem("compra", "Total: " + total + " - Fecha: " + fecha); //Datos total con fecha almacenados en navegador local
+-
+-
+-
+-
+
+-
+Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: '¡Gracias por tu compra!',
+    showConfirmButton: false,
+    timer: 1500
+})
+
+}
 
 
 
